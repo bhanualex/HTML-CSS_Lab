@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+
+<head>
+    <style>
+        .menu-items{
+            list-style-type: none;
+            padding: 0%;
+            margin: 0%;
+
+        }
+        #Main-menu {
+            background-color: darkgray;
+           
+        }
+       
+
+        #Main-menu>li {
+            display: inline-block;
+        }
+
+        h2 {
+            background-color: red;
+            text-align: center;
+        }
+
+        #Main-menu>li>a {
+            padding: 5px;
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+
+        }
+
+        #Main-menu>li>a:hover {
+            background-color: black;
+        }
+
+       
+        #Main-menu-item-2 {
+            position: relative;
+        }
+       
+        #Main-menu-item-2:hover #sub-menu-2{
+            display: block;
+        }
+        #sub-menu-2{
+            position: absolute;
+            background-color: lightgray;
+            padding: 10px;
+            white-space:nowrap;
+           display: none;
+        }
+         
+        #Main-menu-item-3 {
+            position: relative;
+        }
+
+
+        #Main-menu-item-3:hover #sub-menu-3{
+            display: block;
+        }
+        #sub-menu-3{
+            position: absolute;
+            background-color: lightgray;
+            padding: 10px;
+            white-space:nowrap;
+           display: none;
+        }
+
+        h1{
+            background-color: red;
+            text-align: center;
+            padding: 10px;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Menu Bar</h1>
+    <nav>
+        <ul id="Main-menu" class="menu-items">
+            <li>
+                <a href="Link-1">Link-1
+                </a>
+            </li>
+            <li id="Main-menu-item-2">
+                <a href="Link-2">Link-2</a>
+                <ul id="sub-menu-2" class="menu-items">
+            <li>
+                <a href="Link-1">DD-Link-1
+                </a>
+            </li>
+            <li>
+                <a href="Link-2">DD-Link-2
+                </a>
+            </li>
+            <li>
+                <a href="Link-3">DD-Link-3
+                </a>
+            </li>
+        </ul>
+            </li>
+
+            
+             <li id="Main-menu-item-3">
+                <a href="Link-3">Link-3</a>
+                <ul id="sub-menu-3" class="menu-items">
+            <li>
+                <a href="Link-1">DD-Link-1
+                </a>
+            </li>
+            <li>
+                <a href="Link-2">DD-Link-2
+                </a>
+            </li>
+            <li>
+                <a href="Link-3">DD-Link-3
+                </a>
+            </li>
+        </ul>
+            </li>
+            
+        </ul>
+    </nav>
+</body>
+
+</html>

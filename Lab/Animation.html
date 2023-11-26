@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+    
+    <head>
+        <style>
+            #Outer_Bar{
+                width: 195px;
+               margin: 0 auto;
+                background-color: rgb(232, 228, 228);
+                padding: 15px;
+                padding-bottom: 40px;
+                text-align: center;
+            }            
+            .bar{
+                background-color: darkgray;
+                width: 30px;
+                height: 300px;
+                display: inline-block;
+                margin: 15px;
+                text-align: center;
+                
+            }
+            .Animated-bar{
+                height: 100%;
+                background-color: white;
+            }
+            @keyframes Animated-bar-1 {
+                0%{
+                    height: 100%;
+                }
+                100%{
+                    height: 70%;
+                }
+                
+            }
+            #Animated-bar-1{
+                animation: Animated-bar-1;
+                animation-duration: 3s;
+                animation-fill-mode: forwards;
+            }
+
+            @keyframes Animated-bar-2{
+                0%{
+                    height: 100%;
+                }
+                100%{
+                    height: 60%;
+                }
+                
+            }
+            #Animated-bar-2{
+                animation: Animated-bar-2;
+                animation-duration: 3s;
+                animation-fill-mode: forwards;
+            }
+            @keyframes Animated-bar-3 {
+                0%{
+                    height: 100%;
+                }
+                100%{
+                    height: 20%;
+                }
+                
+            }
+            #Animated-bar-3{
+                animation: Animated-bar-3;
+                animation-duration: 3s;
+                animation-fill-mode: forwards;
+            }
+            #bar-with-text{
+                display: inline-block;
+                text-align: center;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="Outer_Bar">
+            
+            <div id="bar-with-text"><div id="bar-1" class="bar">
+                <div  id="Animated-bar-1"   class="Animated-bar"></div>
+            </div>
+        <br>
+            30%
+    </div>
+                
+             <div id="bar-with-text"><div id="bar-2" class="bar">
+                <div  id="Animated-bar-2"   class="Animated-bar"></div>
+            </div>
+        <br>
+        40%
+    </div>  
+            
+    <div id="bar-with-text">
+            <div id="bar-3" class="bar">
+                <div  id="Animated-bar-3"   class="Animated-bar"></div>
+            </div>
+            <br>
+            80%
+            </div>
+            <br><br>
+            <b> Bar graph</b>
+        </div>
+        
+    </body>
+</html>
